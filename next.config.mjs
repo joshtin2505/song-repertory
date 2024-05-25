@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'flowbite.s3.amazonaws.com',
+        protocol: 'https',
+        pathname: '/blocks/**'
+      }
+    ]
+  }
+}
 
-export default nextConfig;
+export default nextConfig
