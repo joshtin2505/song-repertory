@@ -6,7 +6,7 @@ body {
   @apply bg-white text-black dark:bg-black dark:text-white;
 }
 
-svg {
+svg.feature-svg {
   @apply dark:fill-neutral-300 fill-neutral-800;
 }
 
