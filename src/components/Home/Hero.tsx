@@ -18,10 +18,10 @@ function Hero() {
           </p>
           <Link
             href="#"
-            className="transition-colors inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white dark:text-black rounded bg-white hover:bg-white/50 focus:ring-4 focus:ring-neutral-300 dark:focus:ring-neutral-900"
+            className="transition-colors inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white dark:text-black dark:bg-white rounded bg-black hover:bg-black/80 dark:hover:bg-white/50 focus:ring-4 focus:ring-neutral-300 dark:focus:ring-neutral-900"
           >
             Get started
-            <FaArrowRight className="w-5 h-5 ml-2" />
+            <FaArrowRight className="w-5 h-5 ml-2 " />
           </Link>
           <Link
             href="#"
@@ -32,10 +32,11 @@ function Hero() {
         </article>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
           <Image
+            className=""
             src="/images/degr2.png"
             alt="mockup"
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
           />
         </div>
       </div>
