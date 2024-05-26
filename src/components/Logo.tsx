@@ -5,8 +5,6 @@ function Logo(props: SVGProps<SVGSVGElement>) {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="760.000000pt"
-      height="522.000000pt"
       viewBox="0 0 760.000000 522.000000"
       preserveAspectRatio="xMidYMid meet"
       {...props}
@@ -67,8 +65,6 @@ l-34 97 0 1730 0 1730 23 75 c84 268 305 479 552 529 30 6 64 13 75 15 11 2
 function LogoDark(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="658"
-      height="452"
       viewBox="0 0 658 452"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
