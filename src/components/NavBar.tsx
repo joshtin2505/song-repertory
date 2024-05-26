@@ -14,7 +14,7 @@ export function NavBar() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <Logo className="dark:hidden" />
+          <Logo className="dark:hidden" width={40} height={40} />
           <LogoDark className="hidden dark:block" width={40} height={40} />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Song Repertory
