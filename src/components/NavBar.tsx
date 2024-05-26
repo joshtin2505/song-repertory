@@ -3,13 +3,15 @@
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa6'
 import { Logo, LogoDark } from './Logo'
+import { useState } from 'react'
 
 export function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <header className="w-full bg-white border-gray-200 dark:bg-black/50 backdrop-blur backdrop-saturate-150 border-b border-white/10">
-      <nav className="flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="flex flex-wrap items-center justify-between mx-auto p-4 relative">
         <Link
-          href="https://flowbite.com/"
+          href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
           rel="noopener noreferrer"
           target="_blank"
@@ -23,12 +25,17 @@ export function NavBar() {
 
         <ul
           id="navbar-default"
-          className="hidden lg:flex w-auto font-medium flex-col p-4 md:p-0 mt-4 border border-neutral-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-neutral-700"
+          className={
+            ' lg:flex w-auto font-medium flex-col p-4 lg:p-0 mt-4 border border-neutral-100 rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 dark:border-neutral-700 ' +
+            (isMenuOpen
+              ? 'max-lg:flex max-lg:absolute max-lg:top-16 max-lg:right-4 max-lg:bg-black/90 max-lg:backdrop-blur-md max-lg:backdrop-saturate-150'
+              : 'max-lg:hidden')
+          }
         >
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-white rounded md:text-neutral-700 md:p-0 dark:text-white md:dark:text-neutral-500"
+              className="block py-2 px-3 text-white rounded lg:text-neutral-700 lg:p-0 dark:text-white lg:dark:text-neutral-500"
               aria-current="page"
             >
               Home
@@ -37,7 +44,7 @@ export function NavBar() {
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
               About
             </Link>
@@ -45,7 +52,7 @@ export function NavBar() {
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
               Services
             </Link>
@@ -53,7 +60,7 @@ export function NavBar() {
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
               Pricing
             </Link>
@@ -61,7 +68,7 @@ export function NavBar() {
           <li>
             <Link
               href="#"
-              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 md:hover:bg-transparent md:border-0 md:hover:text-neutral-700 md:p-0 dark:text-white md:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
               Contact
             </Link>
@@ -81,6 +88,7 @@ export function NavBar() {
             Sign In
           </button>
           <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
             data-collapse-toggle="navbar-default"
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg lg:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600"
