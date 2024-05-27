@@ -3,7 +3,7 @@ import { english, español } from '@/mocks/Home.json'
 function Features() {
   const { features } = english.featuresSection
   return (
-    <section className="bg-gradient-to-br to-neutral-300 from-white dark:bg-gradient-to-br  dark:to-neutral-900 dark:from-neutral-700">
+    <section className="bg-gradient-to-br to-neutral-300 from-white dark:bg-gradient-to-b  dark:to-neutral-900 dark:from-black">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="max-w-screen-md mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white">
