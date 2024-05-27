@@ -5,6 +5,9 @@
 body {
   @apply bg-white text-black dark:bg-black dark:text-white;
 }
+.heroContainer {
+  height: calc(100vh - 72px);
+}
 
 svg.feature-svg {
   @apply dark:fill-neutral-300 fill-neutral-800;
