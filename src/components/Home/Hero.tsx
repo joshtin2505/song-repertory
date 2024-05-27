@@ -5,8 +5,8 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 function Hero() {
   return (
-    <section className="h-[88vh] flex ">
-      <div className="grid place-items-center lg:grid-cols-12 max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-10">
+    <section className="heroContainer flex ">
+      <div className=" grid place-items-center lg:grid-cols-12 max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-10">
         <article className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-balance">
             Repertoire manager for musicians.
