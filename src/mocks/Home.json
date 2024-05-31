@@ -50,7 +50,7 @@
           "icon": "<svg class='feature-svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='m23,0h-1c-2.757,0-5,2.243-5,5v9.261c-.952-.787-2.172-1.261-3.5-1.261-3.032,0-5.5,2.467-5.5,5.5s2.468,5.5,5.5,5.5,5.5-2.467,5.5-5.5V5c0-1.654,1.346-3,3-3h1c.553,0,1-.448,1-1s-.447-1-1-1Zm-9.5,22c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5,3.5,1.57,3.5,3.5-1.57,3.5-3.5,3.5ZM0,1C0,.448.447,0,1,0h11c.553,0,1,.448,1,1s-.447,1-1,1H1c-.553,0-1-.448-1-1Zm0,6c0-.552.447-1,1-1h11c.553,0,1,.448,1,1s-.447,1-1,1H1c-.553,0-1-.448-1-1Zm8,6c0,.552-.447,1-1,1H1c-.553,0-1-.448-1-1s.447-1,1-1h6c.553,0,1,.448,1,1Z'/></svg>"
         },
         {
-          "title": "Notes, Annotations, and Lyrics",
+          "title": "Book",
           "description": "Add comments, lyrics, chords, and specific observations for each song, allowing you to capture and remember important related details.",
           "icon": "<svg class='feature-svg' xmlns='http://www.w3.org/2000/svg' id='Outline' viewBox='0 0 24 24'><path d='M18.656.93,6.464,13.122A4.966,4.966,0,0,0,5,16.657V18a1,1,0,0,0,1,1H7.343a4.966,4.966,0,0,0,3.535-1.464L23.07,5.344a3.125,3.125,0,0,0,0-4.414A3.194,3.194,0,0,0,18.656.93Zm3,3L9.464,16.122A3.02,3.02,0,0,1,7.343,17H7v-.343a3.02,3.02,0,0,1,.878-2.121L20.07,2.344a1.148,1.148,0,0,1,1.586,0A1.123,1.123,0,0,1,21.656,3.93Z'/><path d='M23,8.979a1,1,0,0,0-1,1V15H18a3,3,0,0,0-3,3v4H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2h9.042a1,1,0,0,0,0-2H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H16.343a4.968,4.968,0,0,0,3.536-1.464l2.656-2.658A4.968,4.968,0,0,0,24,16.343V9.979A1,1,0,0,0,23,8.979ZM18.465,21.122a2.975,2.975,0,0,1-1.465.8V18a1,1,0,0,1,1-1h3.925a3.016,3.016,0,0,1-.8,1.464Z'/></svg>"
         },
@@ -73,6 +73,105 @@
           "title": "Team Sharing",
           "description": "Facilitate collaboration among band members by easily sharing songs, notes, and audio, promoting smooth and effective communication.",
           "icon": "<svg class='feature-svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='m5.5,7c1.93,0,3.5-1.57,3.5-3.5S7.43,0,5.5,0s-3.5,1.57-3.5,3.5,1.57,3.5,3.5,3.5Zm0-5c.827,0,1.5.673,1.5,1.5s-.673,1.5-1.5,1.5-1.5-.673-1.5-1.5.673-1.5,1.5-1.5Zm12,15c2.481,0,4.5-2.019,4.5-4.5s-2.019-4.5-4.5-4.5-4.5,2.019-4.5,4.5,2.019,4.5,4.5,4.5Zm0-7c1.379,0,2.5,1.121,2.5,2.5s-1.121,2.5-2.5,2.5-2.5-1.121-2.5-2.5,1.121-2.5,2.5-2.5Zm-9.067,8.607c.76.762.76,2.023-.013,2.798l-2.199,2.288c-.196.204-.458.307-.721.307-.25,0-.499-.093-.693-.279-.398-.383-.411-1.016-.028-1.414l1.256-1.307h-2.035c-2.206,0-4-1.794-4-4v-1c0-.553.448-1,1-1s1,.447,1,1v1c0,1.103.897,2,2,2h2.029l-1.25-1.307c-.383-.398-.371-1.031.028-1.414.398-.382,1.031-.371,1.414.027l2.212,2.301Zm14.85,5.352c-.095.028-.189.041-.282.041-.433,0-.831-.282-.959-.718-.568-1.933-2.436-3.282-4.541-3.282s-3.973,1.35-4.541,3.282c-.156.529-.71.836-1.242.677-.53-.155-.833-.711-.677-1.241.817-2.777,3.473-4.718,6.459-4.718s5.643,1.94,6.459,4.718c.156.53-.147,1.086-.677,1241Zm-12.931-11.022c-.116.043-.234.063-.351.063-.405,0-.786-.247-.937-.649-.527-1.406-1.959-2.351-3.563-2.351s-3.037.944-3.563,2.351c-.194.519-.771.777-1.288.586-.517-.194-.779-.771-.585-1.287.818-2.183,3.003-3.649,5.437-3.649s4.618,1.467,5.437,3.649c.194.517-.068,1.093-.585,1.287Z'/>"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Find the perfect plan for you",
+      "description": "Here at Song Repertory, we offer plans to suit your needs. Choose and start managing your musical repertoire with ease.",
+      "plans": [
+        {
+          "name": "Musician",
+          "description": "Free Forever and the best option for personal use.",
+          "price": null,
+          "features": [
+            {
+              "thereIs": true,
+              "feature": "Max 8 new Songs per Month"
+            },
+            {
+              "thereIs": true,
+              "feature": "Max 600 Characters per Book"
+            },
+            {
+              "thereIs": true,
+              "feature": "5 Tags per Song"
+            },
+            {
+              "thereIs": true,
+              "feature": "Max 5 Songs on the Agenda"
+            },
+            {
+              "thereIs": false,
+              "feature": "Team Sharing"
+            },
+            {
+              "thereIs": true,
+              "feature": "Support"
+            }
+          ]
+        },
+        {
+          "name": "band",
+          "description": "Great for small bands and musical groups.",
+          "price": 29.99,
+          "features": [
+            {
+              "thereIs": true,
+              "feature": "Max 30 new Songs per Month"
+            },
+            {
+              "thereIs": true,
+              "feature": "Max 5000 Characters per Book"
+            },
+            {
+              "thereIs": true,
+              "feature": "10 Tags per Song"
+            },
+            {
+              "thereIs": true,
+              "feature": "Max 16 Songs on the Agenda"
+            },
+            {
+              "thereIs": true,
+              "feature": "10 Team Members"
+            },
+            {
+              "thereIs": true,
+              "feature": "Priority Support"
+            }
+          ]
+        },
+        {
+          "name": "Orchestra",
+          "description": "Best option for large scale uses, large bands and orchestras.",
+          "price": 59.99,
+          "features": [
+            {
+              "thereIs": true,
+              "feature": "Unlimitedd new Songs per Month"
+            },
+            {
+              "thereIs": true,
+              "feature": "Unlimited Characters per Book"
+            },
+            {
+              "thereIs": true,
+              "feature": "Unlimited Tags per Song"
+            },
+            {
+              "thereIs": true,
+              "feature": "Unlimited Songs on the Agenda"
+            },
+            {
+              "thereIs": true,
+              "feature": "Unlimited Team Members"
+            },
+            {
+              "thereIs": true,
+              "feature": "Priority Support"
+            }
+          ]
         }
       ]
     }
