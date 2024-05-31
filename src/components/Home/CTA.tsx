@@ -5,12 +5,12 @@ function CTA() {
     <section className="bg-white dark:bg-gradient-to-b from-black to-neutral-950 min-h-screen">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
-          className="w-full dark:hidden"
+          className="w-full dark:hidden grayscale"
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
           alt="dashboard image"
         />
         <img
-          className="w-full hidden dark:block"
+          className="w-full hidden dark:block grayscale "
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
           alt="dashboard image"
         />
