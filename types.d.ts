@@ -17,4 +17,10 @@ type Plan =
         feature: string
       }[]
     }
-export type { Plan }
+interface Testimonial {
+  name: string
+  position: string
+  comment: string
+  img: string
+}
+export type { Plan, Testimonial }
