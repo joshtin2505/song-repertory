@@ -24,7 +24,7 @@ function Hero() {
             <FaArrowRight className="w-5 h-5 ml-2 " />
           </Link>
           <Link
-            href="#"
+            href="#pricing"
             className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-black/90 border border-neutral-300 rounded hover:bg-neutral-300 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:ring-neutral-900"
           >
             Pricing
