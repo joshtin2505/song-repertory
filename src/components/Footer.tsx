@@ -4,7 +4,7 @@ import { english } from '@/mocks/Home.json'
 
 function Footer() {
   return (
-    <footer className="p-4 bg-white md:p-8 lg:p-10 dark:bg-neutral-800">
+    <footer className="p-4 bg-white md:p-8 lg:p-10 border-gray-200 dark:bg-black/50 backdrop-blur backdrop-saturate-150 border-t dark:border-white/30">
       <div className="mx-auto max-w-screen-xl text-center flex items-center flex-col">
         <header className="flex items-center gap-2">
           <a
