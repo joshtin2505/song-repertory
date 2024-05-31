@@ -43,23 +43,15 @@ export function NavBar() {
           </li>
           <li>
             <Link
-              href="#"
+              href="#features"
               className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
-              About
+              Features
             </Link>
           </li>
           <li>
             <Link
-              href="#"
-              className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
-            >
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#"
+              href="#pricing"
               className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
               Pricing
@@ -67,41 +59,41 @@ export function NavBar() {
           </li>
           <li>
             <Link
-              href="#"
+              href="#support"
               className="block py-2 px-3 text-neutral-900 rounded hover:bg-neutral-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-neutral-700 lg:p-0 dark:text-white lg:dark:hover:text-neutral-500 dark:hover:bg-neutral-700 dark:hover:text-white lg:dark:hover:bg-transparent"
             >
-              Contact
+              Contact Support
             </Link>
           </li>
           <hr className="hidden max-sm:block border-t-white/30" />
           <div className="flex flex-col py-2 gap-2 sm:hidden">
-            <button
-              type="button"
+            <Link
+              href="/login"
               className="sm:hidden transition dark:text-white dark:hover:text-white/50 focus:ring-4 focus:ring-neutral-300 font-medium rounded px-4 py-1 text-neutral-950 focus:outline-none dark:focus:ring-neutral-800"
             >
               Login
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              href="/register"
               className="sm:hidden transition text-white bg-neutral-700 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-300 font-medium rounded px-4 py-1 dark:bg-white/90 dark:text-neutral-950 dark:hover:bg-white/50 focus:outline-none dark:focus:ring-neutral-800"
             >
               Sign In
-            </button>
+            </Link>
           </div>
         </ul>
         <div className="flex gap-3 mr-3">
-          <button
-            type="button"
+          <Link
+            href="/register"
             className="max-sm:hidden transition dark:text-white dark:hover:text-white/50 focus:ring-4 focus:ring-neutral-300 font-medium rounded px-4 py-1 text-neutral-950 focus:outline-none dark:focus:ring-neutral-800"
           >
             Login
-          </button>
-          <button
-            type="button"
+          </Link>
+          <Link
+            href="/register"
             className="max-sm:hidden transition text-white bg-neutral-700 hover:bg-neutral-800 focus:ring-4 focus:ring-neutral-300 font-medium rounded px-4 py-1 dark:bg-white/90 dark:text-neutral-950 dark:hover:bg-white/50 focus:outline-none dark:focus:ring-neutral-800"
           >
             Sign In
-          </button>
+          </Link>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             data-collapse-toggle="navbar-default"
