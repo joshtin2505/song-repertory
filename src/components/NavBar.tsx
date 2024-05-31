@@ -8,7 +8,7 @@ import { useState } from 'react'
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <header className="w-full bg-white border-gray-200 dark:bg-black/50 backdrop-blur backdrop-saturate-150 border-b border-white/10">
+    <header className="w-full bg-white border-gray-200 dark:bg-black/50 backdrop-blur backdrop-saturate-150 border-b dark:border-white/10">
       <nav className="flex flex-wrap items-center justify-between mx-auto p-4 relative">
         <Link
           href="/"
