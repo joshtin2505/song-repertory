@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import CursorFollower from '@/components/CursorFollower'
 import CTA from '@/components/Home/CTA'
 import Testimonials from '@/components/Home/Testimonials'
+import Support from '@/components/Home/Support'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Pricing />
       <CTA />
       <Testimonials />
+      <Support />
       <Footer />
     </main>
   )
