@@ -195,7 +195,12 @@
         "comment": "I've been using Song Repertory for a while now and it has helped me a lot to keep my songs organized and ready to play. I recommend it to all my musician friends.",
         "img": "https://images.pexels.com/photos/12290903/pexels-photo-12290903.jpeg?auto=compress&cs=tinysrgb&w=600"
       }
-    ]
+    ],
+    "CTA": {
+      "title": "Enough of the mess, let us manage your song repertoire",
+      "description": "Start now and enjoy the benefits of having your songs organized and ready to play.",
+      "button": "Get Started"
+    }
     
   }
 }
