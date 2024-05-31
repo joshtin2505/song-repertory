@@ -33,7 +33,7 @@ function Testimonials() {
 
   return (
     <section
-      className="px-44 bg-neutral-50 dark:bg-gradient-to-b from-neutral-900 to-neutral-950 h-screen flex flex-col justify-center items-center"
+      className="px-44 bg-neutral-50 dark:bg-neutral-950 h-screen flex flex-col justify-center items-center"
       id="testimonials"
     >
       <h2 className="mb-8 text-4xl font-extrabold text-center text-neutral-95 dark:text-white">
