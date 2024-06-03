@@ -8,7 +8,6 @@ import {
   slideInFromRight,
   slideInFromTop
 } from '@/lib/motion'
-import { Logo, LogoDark } from '../Logo'
 
 function Hero() {
   return (
