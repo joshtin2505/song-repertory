@@ -4,12 +4,18 @@ import Link from 'next/link'
 import { FaBars } from 'react-icons/fa6'
 import { Logo, LogoDark } from './Logo'
 import { useState } from 'react'
-
+import { motion } from 'framer-motion'
+import { slideInFromTop } from '@/lib/motion'
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <header className="w-full bg-white border-gray-200 dark:bg-black/50 backdrop-blur backdrop-saturate-150 border-b dark:border-white/10">
-      <nav className="flex flex-wrap items-center justify-between mx-auto p-4 relative">
+    <motion.header
+      initial="hidden"
+      animate="visible"
+      variants={slideInFromTop}
+      className="w-full bg-white border-gray-200 dark:bg-black/50 backdrop-blur backdrop-saturate-150 border-b dark:border-white/10"
+    >
+      <motion.nav className="flex flex-wrap items-center justify-between mx-auto p-4 relative">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -106,8 +112,8 @@ export function NavBar() {
             <FaBars className="w-6 h-6" />
           </button>
         </div>
-      </nav>
-    </header>
+      </motion.nav>
+    </motion.header>
   )
 }
 
