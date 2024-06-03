@@ -1,27 +1,62 @@
-import React from 'react'
+import { motion } from 'framer-motion'
 import { english, español } from '@/mocks/Home.json'
+import { slideInFromLeft, slideInFromRight } from '@/lib/motion'
+import useIntersection from '@/hooks/useIntersection'
+
 function Features() {
   const { features } = english.featuresSection
+  const [headerRef, headerIsObserved] = useIntersection({
+    threshold: 0.1
+  })
+  const [featuresRef, featuresIsObserved] = useIntersection({
+    threshold: 0.15
+  })
   return (
     <section
       id="features"
       className="bg-gradient-to-br to-neutral-300 from-white dark:bg-gradient-to-b  dark:to-neutral-900 dark:from-black"
     >
-      <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div className="max-w-screen-md mb-8 lg:mb-16">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white">
+      <motion.div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <motion.div
+          ref={headerRef}
+          initial="hidden"
+          animate={headerIsObserved ? 'visible' : 'hidden'}
+          className="max-w-screen-md mb-8 lg:mb-16"
+        >
+          <motion.h2
+            variants={slideInFromRight(0.1)}
+            className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white"
+          >
             {english.featuresSection.title}
-          </h2>
-          <p className="text-neutral-500 sm:text-xl dark:text-neutral-400">
+          </motion.h2>
+          <motion.p
+            variants={slideInFromRight(0.3)}
+            className="text-neutral-500 sm:text-xl dark:text-neutral-400"
+          >
             {english.featuresSection.description}
-          </p>
-        </div>
-        <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+          </motion.p>
+        </motion.div>
+        <motion.div
+          ref={featuresRef}
+          initial="hidden"
+          animate={featuresIsObserved ? 'visible' : 'hidden'}
+          className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+        >
           {features &&
             features.length > 0 &&
-            features.map((feature) => Feature(feature))}
-        </div>
-      </div>
+            features.map((feature, i) => {
+              return (
+                <motion.div
+                  key={i}
+                  variants={slideInFromLeft(i * 0.15)}
+                  className="flex flex-col items-center space-y-4"
+                >
+                  <Feature {...feature} />
+                </motion.div>
+              )
+            })}
+        </motion.div>
+      </motion.div>
     </section>
   )
 }
