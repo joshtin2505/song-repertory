@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { english, español } from '@/mocks/Home.json'
 import { slideInFromLeft, slideInFromRight } from '@/lib/motion'
 import useIntersection from '@/hooks/useIntersection'
+import { RefObject } from 'react'
 
 function Features() {
   const { features } = english.featuresSection
@@ -18,7 +19,7 @@ function Features() {
     >
       <motion.div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <motion.div
-          ref={headerRef}
+          ref={headerRef as RefObject<HTMLDivElement>}
           initial="hidden"
           animate={headerIsObserved ? 'visible' : 'hidden'}
           className="max-w-screen-md mb-8 lg:mb-16"
@@ -37,7 +38,7 @@ function Features() {
           </motion.p>
         </motion.div>
         <motion.div
-          ref={featuresRef}
+          ref={featuresRef as RefObject<HTMLDivElement>}
           initial="hidden"
           animate={featuresIsObserved ? 'visible' : 'hidden'}
           className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
