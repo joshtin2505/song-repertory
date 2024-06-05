@@ -11,6 +11,7 @@ import {
 import { english } from '@/mocks/Home.json'
 import type { Testimonial as TestimonialType } from '../../../types.d'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 function Testimonials() {
   const [apiCarousel, setApiCarousel] = useState<CarouselApi>()
@@ -33,7 +34,7 @@ function Testimonials() {
 
   return (
     <section
-      className="px-44 bg-neutral-50 dark:bg-neutral-950 h-screen flex flex-col justify-center items-center"
+      className="px-44 bg-neutral-50 dark:bg-neutral-950 h-screen flex flex-col justify-center items-center max-sm:overflow-hidden"
       id="testimonials"
     >
       <h2 className="mb-8 text-4xl font-extrabold text-center text-neutral-95 dark:text-white">
@@ -59,8 +60,8 @@ function Testimonials() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground">
-        Slide {current} of {count}
+      <div className="py-2 text-center text-sm  w-10">
+        {current} of {count}
       </div>
     </section>
   )
@@ -72,15 +73,17 @@ function Testimony({ testimonial }: { testimonial: TestimonialType }) {
       <figure className="max-w-screen-md mx-auto">
         <FaQuoteLeft className="w-6 h-6 text-primary-500 dark:text-primary-400" />
         <blockquote>
-          <p className="text-2xl font-medium text-gray-900 dark:text-white">
+          <p className="text-xl first-letter:text-3xl max-sm:text-sm dark:first-letter:text-neutral-500 max-sm:first-letter:text-xl max-sm:max-w-72 font-medium text-gray-900 dark:text-white">
             {testimonial.comment}
           </p>
         </blockquote>
         <figcaption className="flex items-center justify-center mt-6 space-x-3">
-          <img
+          <Image
             className="w-6 h-6 rounded-full"
             src={testimonial.img}
             alt="profile picture"
+            width={100}
+            height={100}
           />
           <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
             <div className="pr-3 font-medium text-gray-900 dark:text-white">
