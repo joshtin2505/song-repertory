@@ -6,6 +6,11 @@ const nextConfig = {
         hostname: 'flowbite.s3.amazonaws.com',
         protocol: 'https',
         pathname: '/blocks/**'
+      },
+      {
+        hostname: 'images.pexels.com',
+        protocol: 'https',
+        pathname: '/photos/**'
       }
     ]
   }
