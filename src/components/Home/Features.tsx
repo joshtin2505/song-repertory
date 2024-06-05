@@ -15,7 +15,7 @@ function Features() {
   return (
     <section
       id="features"
-      className="bg-gradient-to-br to-neutral-300 from-white dark:bg-gradient-to-b  dark:to-neutral-900 dark:from-black"
+      className="bg-gradient-to-br to-neutral-300 from-white dark:bg-gradient-to-b  dark:to-neutral-900 dark:from-black overflow-x-hidden"
     >
       <motion.div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <motion.div
