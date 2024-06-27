@@ -92,7 +92,8 @@ const config: Config = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate'), require('tailwindcss-bg-patterns')]
+  plugins: [require('tailwindcss-animate'), require('tailwindcss-bg-patterns')],
+    darkMode: "class",
 } satisfies Config
 
 export default config
